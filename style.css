@@ -1,0 +1,143 @@
+/* 整個網頁的基本設定 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "DFKai-SB", "標楷體", serif;
+  font-size: 18px;
+  background-color: #F5F3FF;
+  color: #352F44;
+  line-height: 1.6;
+}
+
+/* 頁首 */
+header {
+  background-color: #6C63A8;
+  color: #FFFDF5;
+  padding: 24px;
+  text-align: center;
+}
+
+/* 導覽列 */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  background-color: #403A6B;
+}
+
+nav a {
+  color: #FFFDF5;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* 主要內容 */
+main {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* 標題 */
+h1 {
+  color: #FFFDF5;
+  font-size: 36px;
+}
+
+h2 {
+  color: #554F8A;
+  font-size: 26px;
+  padding: 10px;
+  border: 2px solid #8A84C7;
+  margin-bottom: 20px;
+}
+
+/* 段落 */
+p {
+  line-height: 1.8;
+}
+
+/* 文字連結 */
+a {
+  color: #6759B3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 特別強調的文字 */
+.highlight {
+  background-color: #E4E0FF;
+  padding: 8px;
+}
+
+/* 相關連結標題 */
+#contact {
+  border: 2px solid #8A84C7;
+  padding: 8px;
+}
+
+/* 圖片 */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* 表格 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #FFFFFF;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #B8B3D6;
+  text-align: left;
+}
+
+th {
+  background-color: #D9D5F2;
+}
+
+td {
+  background-color: #FFFFFF;
+}
+
+/* 頁尾 */
+footer {
+  background-color: #403A6B;
+  color: #FFFDF5;
+  padding: 24px;
+  text-align: center;
+}
+
+/* 手機版 */
+@media (max-width: 600px) {
+  main {
+    width: 100%;
+    padding: 16px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+}
